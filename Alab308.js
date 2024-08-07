@@ -111,6 +111,13 @@ const fuelNeeded75 = totalDistance / fuelEffeciency75;
 const fuelCost75 = fuelNeeded75 * fuelCostPerGallon;
 const tripTime75 = totalDistance / 75;
 
+// Log results for 75 mph
+console.log(`\nAt 75 mph:`);
+console.log(`Fuel needed: ${totalDistance} / ${fuelEffeciency75} = ${fuelNeeded75.toFixed(2)} gallons`);
+console.log(`Fuel cost: ${fuelNeeded75.toFixed(2)} * ${fuelCostPerGallon} = $${fuelCost75.toFixed(2)}`);
+console.log(`Trip time: ${totalDistance} / 75 = ${tripTime75.toFixed(2)} hours`);
+console.log(`Is budget sufficient? ${fuelCost75} <= ${fuelBudget} => ${fuelCost75 <= fuelBudget}`);
+
 
 
 
